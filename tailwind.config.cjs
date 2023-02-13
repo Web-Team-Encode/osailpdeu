@@ -11,6 +11,9 @@ module.exports = {
         },
         redTertiary: "#F76B52",
       },
+      fontFamily: {
+        "Roboto": "Roboto, sans-serif",
+      },
     },
   },
   plugins: [],
