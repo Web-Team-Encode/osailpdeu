@@ -12,9 +12,13 @@ module.exports = {
         redTertiary: "#F76B52",
       },
       fontFamily: {
-        "Roboto": "Roboto, sans-serif",
+        Roboto: "Roboto, sans-serif",
+      },
+      gridTemplateColumns: {
+        "1/3": "1fr 3fr",
+        "1.2/3": "1.2fr 3fr",
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwind-scrollbar")({nocompatible: true})],
 }
