@@ -1,12 +1,13 @@
 import React from 'react'
+import Navbar from '../Components/Navbar'
 import EventCard from '../Components/Home/EventCard'
-import Footer from '../Components/Home/Footer'
+import Footer from '../Components/Footer'
 
 export default function Home() {
     return (
        <>
 
-
+            <Navbar/>
             <main className='h-screen flex-col px-4 full-center  bg-whitePrimary' >
                 <h1 className='text-6xl'>OSAIL</h1>
                 <p className='md:w-1/5 mt-5 text-center'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -19,7 +20,7 @@ export default function Home() {
                     <h2 className='text-4xl text-white'>Upcomming Events</h2>
                     <p className='text-center mt-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
 
-                    <div className='cards-container flex w-full px-12 md:p-16 mt-5 flex flex-wrap justify-center gap-7'>
+                    <div className='cards-container w-full px-12 md:p-16 mt-5 flex flex-wrap justify-center gap-7'>
 
                         <EventCard eventName={'Event 1'}></EventCard>
                         <EventCard eventName={'Event 2'}></EventCard>
