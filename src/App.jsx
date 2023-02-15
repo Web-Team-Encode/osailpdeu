@@ -6,13 +6,14 @@ import Committees from "./Pages/Committees"
 import Clubs from "./Pages/Clubs"
 import ClubInfo from "./Pages/ClubInfo"
 import EPF from "./Pages/EPF"
+import Home from "./Pages/Home"
 
 function App() {
   return (
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<h1>Home</h1>} />
+          <Route path="/" element={ <Home/> } />
           <Route path="/clubs" element={<Clubs/>} />
           <Route path="/committees" element={<Committees/>} />
           <Route path="/epf" element={<EPF/>} />
