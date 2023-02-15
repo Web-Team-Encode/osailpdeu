@@ -18,6 +18,9 @@ module.exports = {
         "1/3": "1fr 3fr",
         "1.2/3": "1.2fr 3fr",
       },
+      height:{
+        100:"29rem"
+      },
     },
   },
   plugins: [require("tailwind-scrollbar")({nocompatible: true})],
