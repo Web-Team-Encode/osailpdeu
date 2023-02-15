@@ -4,10 +4,10 @@ import Footer from '../Components/Home/Footer'
 
 export default function Home() {
     return (
-        <div className="container h-screen overflow-x-hidden">
+       <>
 
 
-            <main className='h-full flex-col px-4 full-center  bg-whitePrimary' >
+            <main className='h-screen flex-col px-4 full-center  bg-whitePrimary' >
                 <h1 className='text-6xl'>OSAIL</h1>
                 <p className='md:w-1/5 mt-5 text-center'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 <button className='bg-redTertiary mt-5 text-white p-3 px-12 rounded-xl'>More about us</button>
@@ -33,7 +33,7 @@ export default function Home() {
 
 
 
-        </div>
+        </>
 
 
 
