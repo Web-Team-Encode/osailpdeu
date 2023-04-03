@@ -14,7 +14,7 @@ export default function ClubsList(props) {
       onClick={handleClubSelect}
     >
       <div className="h-14 w-14 rounded-full bg-whitePrimary"></div>
-      <div>
+      <div className="hidden lg:block">
         <h1 className="text-lg font-medium">{club.name}</h1>
         <h2>@club.id</h2>
       </div>
@@ -22,7 +22,7 @@ export default function ClubsList(props) {
   ))
 
   return (
-    <div className="relative max-h-[650px] space-y-2 overflow-y-scroll px-3 scrollbar-thin scrollbar-track-blueSecondary-100 scrollbar-thumb-gray-300 after:absolute after:top-0 after:right-0 after:h-full after:w-[1px]  xl:px-10 ">
+    <div className="space-y-2 px-3 lg:max-h-[650px] lg:overflow-y-scroll lg:scrollbar-thin lg:scrollbar-track-blueSecondary-100 lg:scrollbar-thumb-gray-300 lg:after:absolute lg:after:top-0 lg:after:right-0 lg:after:h-full lg:after:w-[1px] xl:px-10 ">
       {clubsList}
     </div>
   )

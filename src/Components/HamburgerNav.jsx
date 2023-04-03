@@ -60,41 +60,37 @@ export default function HamburgerNav() {
         </div>
 
         <div className="mt-4 text-center text-2xl">
-          <Link to="/clubs">
+          {/* <Link to="/clubs">
             <h1 className="mt-3 cursor-pointer uppercase">
               Clubs
             </h1>
-          </Link>
-          <Link to="/epf">
+          </Link> */}
+          {/* <Link to="/epf">
             <h1 className="mt-3 cursor-pointer uppercase">
               EPF
             </h1>
+          </Link> */}
+          <Link to="/committees">
+            <h1 className="mt-3 cursor-pointer uppercase">Committees</h1>
           </Link>
-          {/* <Link to="/committees">
-            <h1 className="mt-3 cursor-pointer uppercase">
-              Committees
-            </h1>
-          </Link>
-          <Link to="/snt/clubinfo">
+          {/* <Link to="/snt/clubinfo">
             <h1 className="mt-3 cursor-pointer uppercase">
               Club Info
             </h1>
           </Link> */}
-          <Link to="/calendar">
+          {/* <Link to="/calendar">
             <h1 className="mt-3 cursor-pointer uppercase">
               Calender
             </h1>
-          </Link>
+          </Link> */}
           <Link to="/about">
-            <h1 className="mt-3 cursor-pointer uppercase">
-              About Us
-            </h1>
+            <h1 className="mt-3 cursor-pointer uppercase">About Us</h1>
           </Link>
-          <a href="#">
+          {/* <a href="#">
             <h1 className="mt-3 cursor-pointer uppercase">
               Sign Up
             </h1>
-          </a>
+          </a> */}
         </div>
       </div>
     </div>

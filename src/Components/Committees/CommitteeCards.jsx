@@ -7,13 +7,13 @@ export default function CommitteeCards() {
       id: 1,
       name: "S&T",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      link: "/snt",
+      link: "/snt/clubinfo",
     },
     {
       id: 2,
       name: "S&C",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      link: "/snc",
+      link: "/snc/clubinfo",
     },
     {
       id: 3,
@@ -25,9 +25,9 @@ export default function CommitteeCards() {
 
   const committeesCards = committeesData.map((committee) => (
     // Each committee card
-    <div key={committee} className="w-64 mx-auto lg:mx-0">
-      <div className="bg-white w-full h-60 flex items-center justify-center">
-        <h1 className="text-redTertiary text-5xl">{committee.name}</h1>
+    <div key={committee.id} className="mx-auto w-64 lg:mx-0">
+      <div className="flex h-60 w-full items-center justify-center bg-white">
+        <h1 className="text-5xl text-redTertiary">{committee.name}</h1>
       </div>
       <p className="mt-3">{committee.description}</p>
       <Link to={committee.link}>
@@ -36,5 +36,9 @@ export default function CommitteeCards() {
     </div>
   ))
 
-  return <div className="space-y-11 mt-10 sm:flex sm:space-y-0 sm:flex-wrap sm:gap-5 lg:gap-8 lg:justify-center lg:flex-nowrap">{committeesCards}</div>
+  return (
+    <div className="mt-10 space-y-11 sm:flex sm:flex-wrap sm:gap-5 sm:space-y-0 lg:flex-nowrap lg:justify-center lg:gap-8">
+      {committeesCards}
+    </div>
+  )
 }
