@@ -7,6 +7,7 @@ import Clubs from "./Pages/Clubs"
 import ClubInfo from "./Pages/ClubInfo"
 import EPF from "./Pages/EPF"
 import Home from "./Pages/Home"
+import About from "./Pages/About"
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
           <Route path="/committees" element={<Committees />} />
           <Route path="/epf" element={<EPF />} />
           <Route path="/calendar" element={<h1>Calendar</h1>} />
-          <Route path="/about" element={<h1>About</h1>} />
+          <Route path="/about" element={<About/>  } />
 
           {/* This route needs to be change little bit  */}
           {/* // ? Try to do something like this /snt/club/:clubid (refer router docs) */}
